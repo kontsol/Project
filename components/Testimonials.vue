@@ -141,7 +141,7 @@ export default {
 }
 
 .testimonials-review h1 {
-  height: 7rem;
+  height: 5rem;
   font-size: 1.8vw;
 }
 
@@ -219,6 +219,10 @@ export default {
     height: 18rem !important;
   }
 
+  .testimonials-review h1 {
+    height: 6rem !important;
+  }
+
   .testimonials-container {
     gap: 0.8rem;
   }
@@ -240,6 +244,10 @@ export default {
   .testimonials-review {
     height: 14rem !important;
     padding-top: 1rem !important;
+  }
+
+  .testimonials-review h1 {
+    height: 7rem !important;
   }
 
   .testimonials-container h2 {
@@ -293,7 +301,7 @@ export default {
 
 @media (max-width: 720px) {
   .testimonials-review {
-    height: 11.5rem !important;
+    height: 11.7rem !important;
     border-radius: 16px;
     padding: 0.8rem 1.2rem 0.5rem 1.2rem !important;
   }
@@ -304,6 +312,7 @@ export default {
 
   .testimonials-review h1 {
     font-size: 0.9rem !important;
+    height: 8rem !important;
   }
 
   #brands {
