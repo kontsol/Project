@@ -125,7 +125,7 @@ export default {
 
 .testimonials-review {
   width: 40vw;
-  height: 25rem;
+  height: 27rem;
   padding: 2rem 2rem 1rem 2rem;
   background-color: #fff;
   border-radius: 18px;
@@ -135,13 +135,13 @@ export default {
 
 .testimonials-review p {
   font-size: 1.6vw;
-  height: 13rem;
+  height: 12rem;
   color: #585858;
   line-height: 1.7vw;
 }
 
 .testimonials-review h1 {
-  height: 4.5rem;
+  height: 7rem;
   font-size: 1.8vw;
 }
 
@@ -204,7 +204,7 @@ export default {
 
 @media (max-width: 1600px) {
   .testimonials-review {
-    height: 19rem !important;
+    height: 20rem !important;
   }
 }
 
