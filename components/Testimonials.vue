@@ -294,9 +294,9 @@ export default {
 
 @media (max-width: 720px) {
   .testimonials-review {
-    height: 11.2rem !important;
+    height: 11.5rem !important;
     border-radius: 16px;
-    padding: 0.5rem 1.2rem 0.5rem 1.2rem !important;
+    padding: 0.8rem 1.2rem 0.5rem 1.2rem !important;
   }
 
   .testimonials-review p {
@@ -327,7 +327,7 @@ export default {
   }
 
   .testimonials-review {
-    height: 14rem !important;
+    height: 14.3rem !important;
   }
 
   .testimonials-review p {
