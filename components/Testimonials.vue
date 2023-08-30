@@ -15,11 +15,17 @@
           >
             <h1>{{ testimonial.title }}</h1>
             <p>{{ testimonial.body }}</p>
-          </div>
-        </div>
-        <div class="testimonials-profile">
-          <div v-for="(avatar, index) in avatars" :key="index">
-            <img :src="avatar" alt="Avatar" />
+            <div class="testimonials-profile">
+              <img
+                id="avatar"
+                src="../assets/images/avatar-1.png"
+                alt="Avatar"
+              />
+              <div class="profile">
+                <h2>Tyler Nix</h2>
+                <span>CEO of Lorem Ipsum</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -112,34 +118,15 @@ export default {
   margin-bottom: 1.5rem;
 }
 
-.testimonials-reviews {
-  /* display: flex;
-  align-items: center;
-  white-space: nowrap; */
-  /* gap: 1rem; */
-  /* display: grid;
-  grid-template-columns: repeat(2, 1fr); */
-  /* display: flex;
-  align-items: flex-start; */
-  /* max-width: 80rem; */
-  /* max-height: 19rem; */
-
-  /* overflow-x: auto; */
-}
-
 .testimonials-wrapper {
   display: flex;
   flex-direction: row;
-  gap: 2rem;
-  /* margin-inline: 2rem; */
-  /* width: 74rem; */
-  /* white-space: nowrap; */
-  /* overflow-y: auto; */
+  gap: 1.5rem;
 }
 
 .testimonials-review {
-  width: 38vw;
-  height: 22rem;
+  width: 40vw;
+  height: 25rem;
   padding: 2rem 2rem 1rem 2rem;
   background-color: #fff;
   border-radius: 18px;
@@ -149,23 +136,28 @@ export default {
 
 .testimonials-review p {
   font-size: 1.6vw;
+  height: 13rem;
   color: #585858;
   line-height: 1.7vw;
-  margin-top: 1vw;
 }
 
 .testimonials-review h1 {
+  height: 4.5rem;
   font-size: 1.8vw;
 }
 
-.testimonials-review-profile {
+.profile {
   display: flex;
+  flex-direction: column;
   gap: 0.6rem;
 }
 
-.testimonials-review-profile img {
-  max-width: 3rem;
-  max-height: 3rem;
+.profile h2 {
+  font-size: 1.3vw;
+}
+
+.profile span {
+  font-size: 0.95vw;
 }
 
 .testimonials-brands {
@@ -182,7 +174,7 @@ export default {
 }
 
 #brands:hover {
-  filter: opacity(1); /* Fully opaque on hover */
+  filter: opacity(1);
 }
 
 #load-more-button {
@@ -197,15 +189,35 @@ export default {
   margin-top: 0.5rem;
 }
 
+.testimonials-profile {
+  margin-top: 1rem;
+}
+
+#avatar {
+  width: 3.3vw;
+}
+
+.testimonials-profile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 @media (max-width: 1600px) {
   .testimonials-review {
     height: 19rem !important;
   }
 }
 
+@media (max-width: 1530px) {
+  .testimonials-review {
+    height: 21rem !important;
+  }
+}
+
 @media (max-width: 1380px) {
   .testimonials-review {
-    height: 15rem !important;
+    height: 18rem !important;
   }
 
   .testimonials-container {
@@ -215,6 +227,10 @@ export default {
   .testimonials-text {
     margin-bottom: 1rem;
   }
+
+  .profile {
+    gap: 0.4rem !important;
+  }
 }
 
 @media (max-width: 1040px) {
@@ -223,7 +239,8 @@ export default {
   }
 
   .testimonials-review {
-    height: 12rem !important;
+    height: 14rem !important;
+    padding-top: 1rem !important;
   }
 
   .testimonials-container h2 {
@@ -233,11 +250,19 @@ export default {
   .testimonials-text {
     font-size: 1.1rem !important;
   }
+
+  .profile h2 {
+    font-size: 0.95rem !important;
+  }
+
+  .profile span {
+    font-size: 0.8rem;
+  }
 }
 
 @media (max-width: 890px) {
   .testimonials-review {
-    height: 10rem !important;
+    height: 12rem !important;
     padding: 1rem 1.5rem 1rem 1.5rem !important;
   }
 
@@ -253,13 +278,25 @@ export default {
     font-size: 1rem !important;
     line-height: 1.1rem !important;
   }
+
+  .profile {
+    gap: 0.1rem !important;
+  }
+
+  .profile h2 {
+    font-size: 0.9rem !important;
+  }
+
+  .profile span {
+    font-size: 0.8rem !important;
+  }
 }
 
 @media (max-width: 720px) {
   .testimonials-review {
-    height: 9.3rem !important;
+    height: 11.2rem !important;
     border-radius: 16px;
-    padding: 0.8rem 1.2rem 0.8rem 1.2rem !important;
+    padding: 0.5rem 1.2rem 0.5rem 1.2rem !important;
   }
 
   .testimonials-review p {
@@ -273,6 +310,14 @@ export default {
   #brands {
     transform: scale(0.85);
   }
+
+  .profile h2 {
+    font-size: 0.8rem !important;
+  }
+
+  .profile span {
+    font-size: 0.7rem !important;
+  }
 }
 
 @media (max-width: 620px) {
@@ -282,7 +327,7 @@ export default {
   }
 
   .testimonials-review {
-    height: 13rem !important;
+    height: 14rem !important;
   }
 
   .testimonials-review p {
@@ -302,7 +347,7 @@ export default {
   .testimonials-review {
     width: 65vw !important;
     margin-bottom: 0.8rem !important;
-    height: 10.5rem !important;
+    height: 10.7rem !important;
   }
 
   #load-more-button {
@@ -310,19 +355,32 @@ export default {
     font-size: 1rem;
   }
 
-  .testimonials-review h1 {
+  #avatar {
+    width: 1.8rem !important;
   }
 }
 
 @media (max-width: 480px) {
   .testimonials-review {
-    height: 11.5rem !important;
+    height: 12rem !important;
+  }
+
+  .testimonials-review p {
+    height: 12rem !important;
   }
 }
 
 @media (max-width: 420px) {
   .testimonials-review {
-    height: 12.5rem !important;
+    width: 22rem !important;
+    height: 12rem !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .testimonials-review {
+    width: 20rem !important;
+    height: 12rem !important;
   }
 }
 </style>

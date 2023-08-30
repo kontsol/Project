@@ -281,7 +281,7 @@ export default {
   }
 
   #badge {
-    left: 20% !important;
+    left: 24% !important;
     transform: scale(0.48) !important;
   }
 
