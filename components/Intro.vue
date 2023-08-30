@@ -19,7 +19,6 @@
     </div>
     <div class="scroll-button">
       <p>SCROLL FOR MORE</p>
-      <!-- <img src="../assets/images/" /> -->
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="16"
@@ -83,7 +82,6 @@ export default {
   color: #8ecae6;
   font-size: 1.4vw;
   line-height: 3vw;
-  /* transform: rotate(-4deg); */
   transform: skew(0, -5deg);
   position: absolute;
   text-shadow: 3px 4px 3px rgba(0, 0, 0, 0.836),

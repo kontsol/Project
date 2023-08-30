@@ -87,7 +87,6 @@ export default {
     refreshReviews() {
       this.fetchTestimonials();
     },
-    // "xsgames.co/randomusers/avatar.php?g=male"
     async randomAvatar() {},
   },
 };

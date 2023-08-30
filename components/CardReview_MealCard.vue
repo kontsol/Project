@@ -507,7 +507,6 @@ export default {
 
   .card-review-image-section img {
     transform: scale(1.8) !important;
-    /* overflow: auto; */
   }
 
   .unrivalled-meal {
